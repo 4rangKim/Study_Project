@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+			.row.content {height: 1500px}
+			
+			/* Set gray background color and 100% height */
+			.sidenav {
+			  background-color: #f1f1f1;
+			  height: 100%;
+			}
+			
+			/* Set black background color, white text and some padding */
+			footer {
+			  background-color: #555;
+			  color: white;
+			  padding: 15px;
+			}
+			
+			/* On small screens, set height to 'auto' for sidenav and grid */
+			@media screen and (max-width: 767px) {
+			  .sidenav {
+			    height: auto;
+			    padding: 15px;
+			  }
+			  .row.content {height: auto;} 
+			}
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div class="container text-center">
+				<a href="../bootstrap/bootstrap_html_test01.html">
+			    	<h1>Popular Contents</h1>
+			    </a>     
+		    	<p>from Netflix</p>
+		  	</div>
+		</div>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+		    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span>                        
+		      		</button>
+		      		<a class="navbar-brand" href="#">MENU</a>
+		    	</div>
+		    	<div class="collapse navbar-collapse" id="myNavbar">
+		      		<ul class="nav navbar-nav">
+		        		<li class="active"><a href="#">Home</a></li>
+				        <li><a href="#">Search</a></li>
+				        <li><a href="#">Genre</a></li>
+				        <li><a href="#">Drama</a></li>
+				        <li><a href="#">Movie</a></li>
+		      		</ul>
+		    	</div>
+		  	</div>
+		</nav>
+		
+		<div class="container-fluid">
+			<div class="row content">
+		    	<div class="col-sm-3 sidenav">
+		      		<h4>스위트홈 - Sweet Home</h4>
+		      		<ul class="nav nav-pills nav-stacked">
+				        <li class="active"><a href="#section1">소개</a></li>
+				        <li><a href="#section2">예고편</a></li>
+				        <li><a href="#section3">에피소드</a></li>
+				        <li><a href="#section3">등장인물</a></li>
+		      		</ul><br>
+		    	</div>
+		
+		    	<div class="col-sm-9">
+					<div id="section1">
+						<h1>소개</h1>
+						<img src="../images/SweetHome.jpg">
+						<p>세상을 차단하고 방 안에 틀어박힌 10대 소년. 현수가 세상 밖으로 나온다. 인간이 괴물로 변했다. 그래도 살아야 한다. 아직은 사람이니까. 이웃들과 함께 싸워야 한다.</p>
+					</div>
+					<div id="section2">
+						<h1>영상</h1>
+						<div class="row">
+							<div class="col-sm-3">
+								<p>스위트홈 | 티저예고편 </p>
+								<div>
+    								<iframe src="https://www.youtube.com/embed/2s3Qqp5LD24"></iframe>
+  								</div>
+							</div>
+							<div class="col-sm-3">
+								<p>스위트홈 | 메인예고편 </p>
+								<div>
+    								<iframe src="https://www.youtube.com/embed/B5IQqZDSRjk"></iframe>
+  								</div>
+							</div>
+							<div class="col-sm-3">
+								<p>스위트홈 | 메이킹영상 </p>
+								<div>
+    								<iframe src="https://www.youtube.com/embed/6bMl5t94HW4"></iframe>
+  								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<p>캐릭터 미리보기 #1 현수, 두식, 길섭, 유리</p>
+								<div>
+    								<iframe src="https://www.youtube.com/embed/yrchC5YcKRk"></iframe>
+  								</div>
+							</div>
+							<div class="col-sm-3">
+								<p>캐릭터 미리보기 #2 이경, 은혁, 은유</p>
+								<div>
+    								<iframe src="https://www.youtube.com/embed/WvAEilmJRRI"></iframe>
+  								</div>
+							</div>
+							<div class="col-sm-3">
+								<p>캐릭터 미리보기 #3 상욱, 재헌, 지수</p>
+								<div>
+    								<iframe src="https://www.youtube.com/embed/omy-KMXTZdw"></iframe>
+  								</div>
+							</div>
+						</div>
+					</div>
+					<div id="section3">
+						<h1>에피소드</h1>
+						<p>에피소드 목록</p>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>회차</th>
+									<th>내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1화</td>
+									<td>철거 직전의 아파트, 그린홈으로 이사 온 지 일주일. 집에만 틀어박혀 지내던 현수는 무섭게 돌변한 주민을 목격한다. 내가 먼저 사라지려고 했는데, 세상이 먼저 망했다.</td>
+								</tr>
+								<tr>
+									<td>2화</td>
+									<td>전염병일까? 국가재난경보가 발령되자 긴장하는 주민들. 괴물에게 물린 상욱을 가둬버린다. 현수는 위험에 처한 아이들을 모른 척할 수 없다. 그래, 나가보자. 집 밖으로.</td>
+								</tr>
+								<tr>
+									<td>3화</td>
+									<td>도와줘요. 약속했어요. 지수와 재헌과 함께 아이들을 구하러 가는 현수. 무섭게 덤벼드는 괴물을 처치하고 1408호까지 갈 수 있을까. 놀랍게도 뜻밖의 구세주가 나타난다.</td>
+								</tr>
+								<tr>
+									<td>4화</td>
+									<td>욕망 때문에 괴물이 된다. 골든타임을 놓쳐선 안 된다. 그게 사실이라면 현수란 아이를 어떻게 하나. 주민들의 의견이 갈리자 은혁이 투표를 제안한다. 추방을 할지 말지.</td>
+								</tr>
+								<tr>
+									<td>5화</td>
+									<td>14층까지 갈 수 있을까. 두식 아저씨를 데려와야 하는 위험한 임무. 현수는 망설이지 않는다. 그리고 위로 올라간 또 한 사람. 상욱은 시작한 일을 끝내려 한다. 어떻게든.</td>
+								</tr>
+								<tr>
+									<td>6화</td>
+									<td>내가 해야 할 일이 있다. 기어이 상원의 사무실로 향하는 이경. 현수는 주민들의 부탁이 무엇이든 거절하지 않는다. 선영은 혼자서 괴물과 마주한다. 그녀의 몫이니까.</td>
+								</tr>
+								<tr>
+									<td>7화</td>
+									<td>저 아이를 괴물이라 할 수 있는가. 자신들을 구해준 현수에게 미안한 마음이 드는 사람들. 은혁은 식량이 떨어져 가자 앞으로의 계획을 발표한다. 밖으로 나갈 시간이다.</td>
+								</tr>
+								<tr>
+									<td>8화</td>
+									<td>이대로 죽는다고 해도 어쩔 수 없다. 견디는 수밖에. 지수는 선택한다. 그린홈으로 돌아온 이경은 어떤 결정을 내려야 할지 망설인다. 주민들에겐 또다시 위기가 찾아온다.</td>
+								</tr>
+								<tr>
+									<td>9화</td>
+									<td>얼마나 더 잃어야 하나. 슬픔에 잠긴 이들 앞에 나타난 불청객들. 사람 목숨을 하찮게 여기는, 괴물보다 더 잔혹한 그들을 어떻게 상대해야 할까. 기다려야 한다, 기회를.</td>
+								</tr>
+								<tr>
+									<td>10화</td>
+									<td>안전을 보장한다니, 군대에서 뿌린 전단지를 믿어도 될까. 그사이 현수의 마음이 흔들린다. 그의 말처럼 이곳을 떠나는 게 맞는가. 괴물은 사람들 속에 있으면 안 되는가.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="section4">
+						<h1>등장인물</h1>
+						<p>주요 인물</p>
+						<p>그린홈 거주자</p>
+						<p>범죄자 패거리</p>
+						<p>그 외 등장인물</p>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		
+		<footer class="container-fluid">
+			<p>Footer Text</p>
+		</footer>
+		
+	</body>
+</html>
